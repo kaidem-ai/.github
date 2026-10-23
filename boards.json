@@ -1,0 +1,13 @@
+{
+  "kaidem-ai/6": {
+    "name": "Заказная разработка",
+    "repos": [
+      "kaidem-ai/ev-shop",
+      "kaidem-ai/arctland-shop",
+      "kaidem-ai/tracker-test",
+      "andr-kim/semax",
+      "andr-kim/certification",
+      "andr-kim/cfflash"
+    ]
+  }
+}

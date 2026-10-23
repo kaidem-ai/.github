@@ -1,0 +1,18 @@
+[
+  {"name": "agent:pm",        "color": "5319E7", "description": "Задача agent-pm"},
+  {"name": "agent:architect", "color": "5319E7", "description": "Задача agent-architect"},
+  {"name": "agent:dev",       "color": "5319E7", "description": "Задача agent-dev"},
+  {"name": "agent:qa",        "color": "5319E7", "description": "Задача agent-qa"},
+  {"name": "agent:docs",      "color": "5319E7", "description": "Задача agent-docs"},
+  {"name": "agent:support",   "color": "5319E7", "description": "Задача agent-support"},
+  {"name": "agent:content",   "color": "5319E7", "description": "Задача agent-content"},
+  {"name": "agent:analyst",   "color": "5319E7", "description": "Задача agent-analyst"},
+  {"name": "agent:scout",     "color": "5319E7", "description": "Задача agent-scout"},
+  {"name": "human",           "color": "FBCA04", "description": "Делает человек, агент не берёт"},
+  {"name": "bug",             "color": "D73A4A", "description": "Что-то работает не так"},
+  {"name": "client-feedback", "color": "1D76DB", "description": "Правка или отзыв клиента"},
+  {"name": "change-request",  "color": "0E8A16", "description": "Вне ТЗ: доп. работа, нужна оценка"},
+  {"name": "paid-support",    "color": "C5DEF5", "description": "Платная поддержка"},
+  {"name": "free-support",    "color": "BFDADC", "description": "Гарантийная поддержка"},
+  {"name": "qa-mark",         "color": "F9D0C4", "description": "Нашёл тестировщик"}
+]
