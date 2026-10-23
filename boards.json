@@ -1,6 +1,7 @@
 {
   "kaidem-ai/6": {
     "name": "Заказная разработка",
+    "id": "PVT_kwDOEtmzRs4BoVIa",
     "org": "kaidem-ai",
     "exclude": [
       "kaidem-ai/.github",

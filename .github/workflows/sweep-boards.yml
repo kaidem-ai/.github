@@ -12,7 +12,7 @@ jobs:
   sweep:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - run: |
           if [ -z "$GH_TOKEN" ]; then echo "::warning::Нет секрета BOARDS_TOKEN — пропускаю"; exit 0; fi
           scripts/sweep-boards.sh
