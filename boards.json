@@ -1,10 +1,15 @@
 {
   "kaidem-ai/6": {
     "name": "Заказная разработка",
+    "org": "kaidem-ai",
+    "exclude": [
+      "kaidem-ai/.github",
+      "kaidem-ai/kaidem-project-template",
+      "kaidem-ai/kaidem-website",
+      "kaidem-ai/skills-vault",
+      "kaidem-ai/ev-shop-legacy"
+    ],
     "repos": [
-      "kaidem-ai/ev-shop",
-      "kaidem-ai/arctland-shop",
-      "kaidem-ai/tracker-test",
       "andr-kim/semax",
       "andr-kim/certification",
       "andr-kim/cfflash"

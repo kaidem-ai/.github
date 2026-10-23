@@ -1,0 +1,24 @@
+# Каждые 10 минут кладёт на доски задачи, которых там нет (scripts/sweep-boards.sh).
+# Токен BOARDS_TOKEN — classic PAT со scope repo и project (секрет этого репозитория).
+name: Задачи на доски
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+permissions:
+  actions: write
+  contents: read
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          if [ -z "$GH_TOKEN" ]; then echo "::warning::Нет секрета BOARDS_TOKEN — пропускаю"; exit 0; fi
+          scripts/sweep-boards.sh
+        env:
+          GH_TOKEN: ${{ secrets.BOARDS_TOKEN }}
+      # GitHub выключает расписание после 60 дней без коммитов; повторное включение сбрасывает счётчик.
+      - run: gh workflow enable sweep-boards.yml -R "$GITHUB_REPOSITORY"
+        env:
+          GH_TOKEN: ${{ github.token }}
