@@ -10,10 +10,6 @@
       "kaidem-ai/skills-vault",
       "kaidem-ai/ev-shop-legacy"
     ],
-    "repos": [
-      "andr-kim/semax",
-      "andr-kim/certification",
-      "andr-kim/cfflash"
-    ]
+    "repos": []
   }
 }
