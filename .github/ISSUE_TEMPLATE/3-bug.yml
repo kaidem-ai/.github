@@ -1,0 +1,29 @@
+name: Баг
+description: Что-то работает не так
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: Что случилось
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Как повторить
+      value: |
+        1. 
+  - type: textarea
+    id: expected
+    attributes:
+      label: Как должно быть
+  - type: input
+    id: where
+    attributes:
+      label: Где
+      description: Страница, устройство, браузер
+  - type: textarea
+    id: screens
+    attributes:
+      label: Скриншоты, видео

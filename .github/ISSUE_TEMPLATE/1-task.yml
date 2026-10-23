@@ -1,0 +1,27 @@
+name: Задача
+description: Работа по проекту — из ТЗ (spec) или бэклога
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: Что сделать
+      description: Коротко и по делу. Можно одной строкой — агент дополнит.
+    validations:
+      required: true
+  - type: input
+    id: spec
+    attributes:
+      label: Раздел spec
+      description: Ссылка на раздел spec.md в vault, если есть
+      placeholder: "[[spec#2.3 Форма заявки]]"
+  - type: textarea
+    id: criteria
+    attributes:
+      label: Критерии приёмки
+      description: Как понять, что готово
+      value: |
+        - [ ] 
+  - type: input
+    id: estimate
+    attributes:
+      label: Оценка, ч

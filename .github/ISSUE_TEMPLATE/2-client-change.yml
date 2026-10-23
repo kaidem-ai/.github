@@ -1,0 +1,29 @@
+name: Правка клиента
+description: Клиент просит изменить сделанное или добавить мелочь
+labels: ["client-feedback"]
+body:
+  - type: textarea
+    id: request
+    attributes:
+      label: Что просит клиент
+      description: Своими словами или цитатой
+    validations:
+      required: true
+  - type: dropdown
+    id: source
+    attributes:
+      label: Откуда
+      options:
+        - Telegram
+        - Почта
+        - Созвон
+        - Другое
+  - type: input
+    id: link
+    attributes:
+      label: Ссылка на сообщение или скриншот
+  - type: textarea
+    id: notes
+    attributes:
+      label: Заметки
+      description: Входит ли в ТЗ, срочность — если понятно. Если не входит — agent-pm поставит change-request.
