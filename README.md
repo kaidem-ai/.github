@@ -7,7 +7,7 @@ GitHub применяет их ко всем репозиториям орган
 
 ## Метки и доски
 
-- `labels.json` — общий набор меток (он же — метки организации по умолчанию в Settings → Repository defaults). `labels-sales.json` — только для `kaidem-sales`.
+- `labels.json` — общий набор меток (он же — метки организации по умолчанию в Settings → Repository defaults).
 - `scripts/setup-repo.sh <owner/repo>` — настроить новый репозиторий: squash-merge, удаление веток, метки (из шаблона это не копируется).
 - `scripts/sync-labels.sh <owner/repo> [extra.json]` — привести метки репозитория к набору.
 - `boards.json` — какие репозитории относятся к какой доске.
