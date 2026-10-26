@@ -9,7 +9,9 @@
       "kaidem-ai/kaidem-website",
       "kaidem-ai/skills-vault",
       "kaidem-ai/ev-shop-legacy",
-      "kaidem-ai/catalogue"
+      "kaidem-ai/catalogue",
+      "kaidem-ai/freelance-monitor",
+      "kaidem-ai/kaidem-vault"
     ],
     "repos": []
   },
@@ -17,7 +19,8 @@
     "name": "Продукты",
     "id": "PVT_kwDOEtmzRs4BoakE",
     "repos": [
-      "kaidem-ai/catalogue"
+      "kaidem-ai/catalogue",
+      "kaidem-ai/freelance-monitor"
     ]
   }
 }
