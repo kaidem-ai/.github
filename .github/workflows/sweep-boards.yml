@@ -1,4 +1,4 @@
-# Каждые 10 минут кладёт на доски задачи, которых там нет (scripts/sweep-boards.sh).
+# Каждые 10 минут сверяет задачи и категории доски Work.
 # Токен BOARDS_TOKEN — classic PAT со scope repo и project (секрет этого репозитория).
 name: Задачи на доски
 on:
@@ -14,8 +14,8 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - run: |
-          if [ -z "$GH_TOKEN" ]; then echo "::warning::Нет секрета BOARDS_TOKEN — пропускаю"; exit 0; fi
-          scripts/sweep-boards.sh
+          if [ -z "$GH_TOKEN" ]; then echo "::error::Нет секрета BOARDS_TOKEN"; exit 1; fi
+          python3 scripts/reconcile-work.py
         env:
           GH_TOKEN: ${{ secrets.BOARDS_TOKEN }}
       # GitHub выключает расписание после 60 дней без коммитов; повторное включение сбрасывает счётчик.

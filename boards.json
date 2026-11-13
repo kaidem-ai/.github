@@ -10,6 +10,17 @@
       "kaidem-ai/skills-vault",
       "kaidem-ai/ev-shop-legacy"
     ],
-    "repos": []
+    "repos": [],
+    "categories": {
+      "kaidem-ai/arctland-shop": "Clients",
+      "kaidem-ai/certification": "Clients",
+      "kaidem-ai/cfflash": "Clients",
+      "kaidem-ai/ev-shop": "Clients",
+      "kaidem-ai/lesville": "Clients",
+      "kaidem-ai/semax": "Clients",
+      "kaidem-ai/catalogue": "Own",
+      "kaidem-ai/freelance-monitor": "Own",
+      "kaidem-ai/kaidem-vault": "Own"
+    }
   }
 }
