@@ -1,6 +1,6 @@
 {
   "kaidem-ai/6": {
-    "name": "Заказная разработка",
+    "name": "Work",
     "id": "PVT_kwDOEtmzRs4BoVIa",
     "org": "kaidem-ai",
     "exclude": [
@@ -8,19 +8,8 @@
       "kaidem-ai/kaidem-project-template",
       "kaidem-ai/kaidem-website",
       "kaidem-ai/skills-vault",
-      "kaidem-ai/ev-shop-legacy",
-      "kaidem-ai/catalogue",
-      "kaidem-ai/freelance-monitor",
-      "kaidem-ai/kaidem-vault"
+      "kaidem-ai/ev-shop-legacy"
     ],
     "repos": []
-  },
-  "kaidem-ai/7": {
-    "name": "Продукты",
-    "id": "PVT_kwDOEtmzRs4BoakE",
-    "repos": [
-      "kaidem-ai/catalogue",
-      "kaidem-ai/freelance-monitor"
-    ]
   }
 }
