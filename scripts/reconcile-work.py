@@ -50,8 +50,10 @@ def plan(items, issues, mapping):
         c=x.get('content') or {}; repo=(c.get('repository') or {}).get('nameWithOwner','').lower()
         if x['isArchived'] or not repo: continue
         desired=mapping.get(repo)
-        if not desired: unknown.add(repo); continue
         current=(x.get('fieldValueByName') or {}).get('name')
+        if not desired:
+            if current not in {'Clients','Own'}: unknown.add(repo)
+            continue
         if current != desired: updates.append((x['id'],desired))
     return additions,updates,unknown
 

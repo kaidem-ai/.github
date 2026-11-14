@@ -6,7 +6,6 @@
     "exclude": [
       "kaidem-ai/.github",
       "kaidem-ai/kaidem-project-template",
-      "kaidem-ai/kaidem-website",
       "kaidem-ai/skills-vault",
       "kaidem-ai/ev-shop-legacy"
     ],
@@ -20,7 +19,8 @@
       "kaidem-ai/semax": "Clients",
       "kaidem-ai/catalogue": "Own",
       "kaidem-ai/freelance-monitor": "Own",
-      "kaidem-ai/kaidem-vault": "Own"
+      "kaidem-ai/kaidem-vault": "Own",
+      "kaidem-ai/kaidem-website": "Own"
     }
   }
 }
